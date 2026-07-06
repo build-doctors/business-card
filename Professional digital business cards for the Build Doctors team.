@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tom Naylor | Build Doctors</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="hero">
+
+        <img src="logo.png" class="logo" alt="Build Doctors Logo">
+
+        <h1>Tom Naylor</h1>
+
+        <h3>Owner | General Contractor</h3>
+
+        <p class="tagline">
+            Utah's Trusted Design-Build Remodeling Experts
+            <br><br>
+            <strong>The CURE™ for Home Remodeling</strong>
+        </p>
+
+    </div>
+
+    <div class="content">
+
+        <p class="intro">
+            Thank you for connecting! Explore our services, view our remodeling projects, schedule a consultation, or save my contact information below.
+        </p>
+
+        <a class="button save"
+        href="tom-naylor.vcf">
+        💾 Save Contact
+        </a>
+
+        <a class="button"
+        href="tel:+18019809010">
+        📞 Call Tom
+        </a>
+
+        <a class="button"
+        href="mailto:team@builddoctors.com">
+        ✉️ Email
+        </a>
+
+        <a class="button"
+        href="https://builddoctors.com"
+        target="_blank">
+        🌐 Website
+        </a>
+
+        <a class="button"
+        href="https://builddoctors.com/virtual-consultation"
+        target="_blank">
+        📅 Schedule Consultation
+        </a>
+
+        <a class="button"
+        href="https://builddoctors.com/portfolio"
+        target="_blank">
+        📸 View Our Projects
+        </a>
+
+        <a class="button"
+        href="https://g.page/r/CXAMaxxJDxvoEBM/review"
+        target="_blank">
+        ⭐ Google Reviews
+        </a>
+
+        <a class="button"
+        href="https://www.google.com/maps/search/?api=1&query=Build+Doctors+Herriman+UT"
+        target="_blank">
+        📍 Get Directions
+        </a>
+
+        <a class="button"
+        href="https://builddoctors.com/facebook"
+        target="_blank">
+        📘 Facebook
+        </a>
+
+        <a class="button"
+        href="https://builddoctors.com/instagram"
+        target="_blank">
+        📷 Instagram
+        </a>
+
+    </div>
+
+    <div class="footer">
+
+        <strong>We Build It Right The First Time!</strong>
+
+        © 2026 Build Doctors. All Rights Reserved.
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
