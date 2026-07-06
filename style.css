@@ -1,38 +1,28 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
 
-    font-family:Arial,Helvetica,sans-serif;
-
-    background:#eef3f8;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    min-height:100vh;
-
-    padding:30px;
+font-family:Arial,Helvetica,sans-serif;
+background:#edf3f8;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:30px;
+min-height:100vh;
 
 }
 
 .card{
 
-    width:420px;
-
-    background:#fff;
-
-    border-radius:30px;
-
-    overflow:hidden;
-
-    box-shadow:0 20px 60px rgba(0,0,0,.18);
+width:420px;
+background:#fff;
+border-radius:30px;
+overflow:hidden;
+box-shadow:0 20px 50px rgba(0,0,0,.18);
 
 }
 
@@ -40,126 +30,116 @@ body{
 
 .hero{
 
-    position:relative;
+position:relative;
 
-    height:480px;
+height:420px;
 
-    background-image:url("hero-bg.jpg");
-
-    background-size:cover;
-
-    background-position:center;
-
-    background-repeat:no-repeat;
+background:url("hero-bg.jpg") center center/cover no-repeat;
 
 }
+
+/* DARK OVERLAY */
 
 .overlay{
 
-    position:absolute;
+position:absolute;
+inset:0;
 
-    inset:0;
-
-    background:linear-gradient(
-
-        to bottom,
-
-        rgba(22,43,73,.78),
-
-        rgba(22,43,73,.72),
-
-        rgba(22,43,73,.35),
-
-        rgba(255,255,255,.92),
-
-        white
-
-    );
+background:linear-gradient(
+to bottom,
+rgba(22,43,73,.75) 0%,
+rgba(22,43,73,.55) 45%,
+rgba(22,43,73,.20) 75%,
+rgba(255,255,255,0) 100%
+);
 
 }
 
+/* CONTENT */
+
 .hero-content{
 
-    position:relative;
+position:relative;
+z-index:5;
 
-    z-index:5;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:flex-start;
 
-    height:100%;
+padding:35px 30px;
 
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:center;
-
-    justify-content:flex-start;
-
-    padding:40px 30px;
-
-    text-align:center;
+text-align:center;
 
 }
 
 .logo{
 
-    width:170px;
+width:170px;
 
-    margin-bottom:28px;
+margin-bottom:22px;
 
-    /* Remove if your logo still has a white box */
-    background:none;
+display:block;
 
-    padding:0;
+background:transparent;
 
-    border-radius:0;
+border:none;
+
+box-shadow:none;
 
 }
 
 h1{
 
-    color:#fff;
+font-size:58px;
 
-    font-size:42px;
+font-weight:700;
 
-    margin-bottom:18px;
+color:#fff;
+
+margin-bottom:18px;
+
+line-height:1;
 
 }
 
 .title-pill{
 
-    display:inline-block;
+display:inline-block;
 
-    padding:14px 34px;
+padding:15px 40px;
 
-    border-radius:40px;
+border-radius:50px;
 
-    border:2px solid rgba(255,255,255,.35);
+background:rgba(255,255,255,.16);
 
-    background:rgba(255,255,255,.10);
+backdrop-filter:blur(14px);
 
-    backdrop-filter:blur(12px);
+border:2px solid rgba(255,255,255,.35);
 
-    color:#F6C54B;
+color:#F7C64A;
 
-    font-size:15px;
+font-weight:bold;
 
-    font-weight:bold;
+font-size:15px;
 
-    letter-spacing:2px;
+letter-spacing:2px;
 
-    margin-bottom:28px;
+margin-bottom:25px;
 
 }
 
 .subtitle{
 
-    color:#fff;
+font-size:18px;
 
-    font-size:20px;
+line-height:1.6;
 
-    line-height:1.7;
+color:white;
 
-    max-width:300px;
+max-width:300px;
+
+font-weight:500;
 
 }
 
@@ -167,13 +147,11 @@ h1{
 
 .content{
 
-    margin-top:-80px;
+padding:35px;
 
-    padding:35px 35px 40px;
+background:white;
 
-    position:relative;
-
-    z-index:20;
+margin-top:0;
 
 }
 
@@ -181,49 +159,49 @@ h1{
 
 .button{
 
-    display:block;
+display:block;
 
-    text-decoration:none;
+text-decoration:none;
 
-    text-align:center;
+text-align:center;
 
-    background:#162B49;
+padding:17px;
 
-    color:#fff;
+margin:14px 0;
 
-    padding:17px;
+border-radius:14px;
 
-    margin:14px 0;
+background:#162B49;
 
-    border-radius:14px;
+color:white;
 
-    font-weight:bold;
+font-weight:bold;
 
-    font-size:17px;
+font-size:18px;
 
-    transition:.3s;
+transition:.25s;
 
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
+box-shadow:0 8px 20px rgba(0,0,0,.15);
 
 }
 
 .button:hover{
 
-    transform:translateY(-3px);
+background:#B3202A;
 
-    background:#B3202A;
+transform:translateY(-2px);
 
 }
 
 .save{
 
-    background:#C3202F;
+background:#C41E2D;
 
 }
 
 .save:hover{
 
-    background:#A51825;
+background:#A91926;
 
 }
 
@@ -231,67 +209,83 @@ h1{
 
 .footer{
 
-    border-top:1px solid #eee;
+text-align:center;
 
-    padding:28px;
+padding:30px;
 
-    text-align:center;
+border-top:1px solid #eee;
 
-    color:#777;
+font-size:13px;
 
-    font-size:13px;
+color:#777;
 
 }
 
 .footer strong{
 
-    display:block;
+display:block;
 
-    color:#162B49;
+margin-bottom:8px;
 
-    margin-bottom:8px;
+color:#162B49;
 
-    font-size:16px;
+font-size:16px;
 
 }
 
+/* MOBILE */
+
 @media(max-width:480px){
+
+body{
+
+padding:15px;
+
+}
 
 .card{
 
-    width:100%;
+width:100%;
 
 }
 
 .hero{
 
-    height:450px;
+height:390px;
 
 }
 
 .logo{
 
-    width:150px;
+width:150px;
 
 }
 
 h1{
 
-    font-size:38px;
+font-size:48px;
 
 }
 
 .title-pill{
 
-    font-size:13px;
+font-size:13px;
 
-    padding:12px 24px;
+padding:13px 26px;
 
 }
 
 .subtitle{
 
-    font-size:18px;
+font-size:16px;
+
+max-width:260px;
+
+}
+
+.button{
+
+font-size:17px;
 
 }
 
